@@ -15,6 +15,10 @@ namespace Final_7_module
             get { return pickPoint; }
             set { pickPoint = value; }
         }
+        public override string GetAddress()
+        {
+            return PickPoint.Address.GetFullAddress();
+        }
         public override void Deliver()
         {
             Console.WriteLine("Доставка в пункт выдачи выполнена.");

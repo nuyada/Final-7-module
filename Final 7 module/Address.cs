@@ -43,6 +43,9 @@ namespace Final_7_module
             get { return apartment; }
             set { apartment = value; }
         }
-
+        public string GetFullAddress()
+        {
+            return $"{Country}, {City}, {Street}, {Building}, {Apartment}";
+        }
     }
 }

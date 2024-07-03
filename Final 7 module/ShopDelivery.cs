@@ -15,6 +15,10 @@ namespace Final_7_module
             get { return shop; }
             set { shop = value; }
         }
+        public override string GetAddress()
+        {
+            return Shop.Address.GetFullAddress();
+        }
         public override void Deliver()
         {
             Console.WriteLine("Доставка в магазин выполнена.");

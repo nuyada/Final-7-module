@@ -33,7 +33,7 @@ namespace Final_7_module
         public static void DisplayOrderInfo<TDelivery, TStruct>(this Order<TDelivery, TStruct> order) where TDelivery : Delivery
         {
             Console.WriteLine($"Заказ №{order.Number}");
-            Console.WriteLine($"Адрес доставки: {order.Delivery.Address}");
+            Console.WriteLine($"Адрес доставки: {order.Delivery.GetAddress()}");
             Console.WriteLine("Список товаров:");
             foreach (var product in order.Products)
             {

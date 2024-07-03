@@ -23,6 +23,10 @@ namespace Final_7_module
             get { return courier; }
             set { courier = value; }
         }
+        public override string GetAddress()
+        {
+            return DeliveryAddress.GetFullAddress();
+        }
         public override void Deliver()
         {
             Console.WriteLine("Доставка на дом выполнена курьером.");

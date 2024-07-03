@@ -15,6 +15,7 @@ namespace Final_7_module
             get { return address; }
             set { address = value; }
         }
+        public abstract string GetAddress();
         public abstract void Deliver();
     }
 }
